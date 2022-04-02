@@ -1,19 +1,15 @@
 package com.skilldistillery.jets.entities;
 
-public abstract class Jet {
+public class CargoPlane extends Jet implements CargoCarrier {
 	private String model;
 	private double speed;
 	private int range;
 	private long price;
 
-	public Jet() {
-		this.model = "jet";
-		this.speed = 0;
-		this.range = 0;
-		this.price = 0;
+	public CargoPlane() {
 	}
 
-	public Jet(String model, double speed, int range, long price) {
+	public CargoPlane(String model, double speed, int range, long price) {
 		super();
 		this.model = model;
 		this.speed = speed;
@@ -21,12 +17,7 @@ public abstract class Jet {
 		this.price = price;
 	}
 
-	public void fly() {
-		System.out.println("Jets Flying");
-	}
-
-	public double getSpeedInMach() {
-		return speed;
+	public void loadCargo() {
 	}
 
 	public String getModel() {
@@ -63,7 +54,7 @@ public abstract class Jet {
 
 	@Override
 	public String toString() {
-		return "Jet [model=" + model + ", speed=" + speed + ", range=" + range + ", price=" + price + "]";
+		return "CargoPlane [model=" + model + ", speed=" + speed + ", range=" + range + ", price=" + price + "]";
 	}
 
 }

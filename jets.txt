@@ -1,1 +1,5 @@
-PassengerJet,Cessna 172,20,100,12000
+Cargo,Boeing C17,590,2000,150000
+FighterJet,Hawker Hurricane,4000,500,200000
+FighterJet,F16 Fighting Falcon,5000,600,300000
+FighterJet,Tupolev Tu95,5500,800,500000
+PassengerJet,Cessna 172,20,100,200000
