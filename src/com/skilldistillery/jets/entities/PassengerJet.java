@@ -6,6 +6,10 @@ public class PassengerJet extends Jet {
 	private int range;
 	private long price;
 
+	public void boardPassengers() {
+		System.out.println("Passengers are now boarding plane");
+	}
+
 	public PassengerJet() {
 	}
 
@@ -16,11 +20,13 @@ public class PassengerJet extends Jet {
 		this.range = range;
 		this.price = price;
 	}
-	
-	
-	
-	
-	
+
+	@Override
+	public void fly() {
+		System.out.println("Model: " + model + " " + "Speed: " + speed + " " + "Range: " + range + " " + "Price: " + price);
+		double flightTime = range / speed;
+		System.out.println("This jet can fly for " + flightTime + " more hours.");
+	}
 
 	public String getModel() {
 		return model;

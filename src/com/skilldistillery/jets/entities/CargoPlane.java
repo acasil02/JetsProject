@@ -17,7 +17,16 @@ public class CargoPlane extends Jet implements CargoCarrier {
 		this.price = price;
 	}
 
+	@Override
+	public void fly() {
+		System.out.println("Model: " + model + " " + "Speed: " + speed + " " + "Range: " + range + " " + "Price: " + price);
+		double flightTime = range / speed;
+		System.out.println("This jet can fly for " + flightTime + " more hours.");
+	}
+
+	@Override
 	public void loadCargo() {
+		System.out.println("Loading cargo");
 	}
 
 	public String getModel() {

@@ -10,6 +10,10 @@ public class AirField {
 		this.jets = new ArrayList<>();
 	}
 
+	public void addJet(Jet jet) {
+		this.jets.add(jet);
+	}
+
 	public List<Jet> getJets() {
 		return jets;
 	}

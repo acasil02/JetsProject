@@ -17,8 +17,16 @@ public class FighterJet extends Jet implements CombatReady {
 		this.price = price;
 	}
 
-	public void fight() {
+	@Override
+	public void fly() {
+		System.out.println("Model: " + model + " " + "Speed: " + speed + " " + "Range: " + range + " " + "Price: " + price);
+		double flightTime = range / speed;
+		System.out.println("This jet can fly for " + flightTime + " more hours.");
+	}
 
+	@Override
+	public void fight() {
+		System.out.println("Ready to fight, seeking targets!");
 	}
 
 	public String getModel() {
