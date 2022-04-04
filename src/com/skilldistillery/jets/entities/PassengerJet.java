@@ -62,7 +62,7 @@ public class PassengerJet extends Jet {
 
 	@Override
 	public String toString() {
-		return "PassengerJet [model=" + model + ", speed=" + speed + ", range=" + range + ", price=" + price + "]";
+		return "PassengerJet [Model = " + model + ", Speed = " + speed + ", Range = " + range + ", Price = " + price + " ]";
 	}
 
 }

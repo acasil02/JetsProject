@@ -63,7 +63,7 @@ public class CargoPlane extends Jet implements CargoCarrier {
 
 	@Override
 	public String toString() {
-		return "CargoPlane [model=" + model + ", speed=" + speed + ", range=" + range + ", price=" + price + "]";
+		return "CargoPlane [Model = " + model + ", Speed = " + speed + ", Range = " + range + ", Price = " + price + " ]";
 	}
 
 }
